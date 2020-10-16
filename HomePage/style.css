@@ -1,0 +1,111 @@
+/*HEADER*/
+.parent{
+  display: flex;
+  background-color: white;
+}
+@media  (min-width:900px){
+  .parent{
+    flex-direction: row;
+    justify-content: space-between;
+    padding:0.1% 2%;
+    }
+  .logoimg{
+    width: 150px;
+    height: 90px;
+    text-align: center;
+  }
+  .buttons{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+  }
+  .btn{
+    height: 30px;
+    width: 90px;
+    padding:0 20px;
+    background-color:#0276FD;
+    color: white;
+    cursor: pointer;
+    border: none;
+    margin-left: 15px;
+    font-weight: 600;
+  }
+  .btn:hover{
+    background-color: #0276FD;
+  }
+}
+@media(max-width:600px){
+  .parent{
+    flex-direction: column;
+    text-align: center;
+    padding:0.5% 2%;
+    }
+  .logoimg{
+    width: 70px;
+    height: 40px;
+    text-align: center;
+  }
+  
+  .buttons{
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: space-around;
+  }
+  .btn{
+    height:20px;
+    width: 50px;
+    font-size: 1vw;
+    background-color:#0276FD;
+    color: white;
+    cursor: pointer;
+    border: none;
+    margin-left: 15px;
+    font-weight: 600;
+  }
+  .btn:hover{
+    background-color: #0276FD;
+  }
+
+}
+
+/* CONTENT PAGE */
+body{
+  background-image: url("../images/Alphard.jpg");
+  background-repeat:no-repeat;
+  background-size: cover;
+  margin: 0;
+}
+.home{
+  padding-top:3%;
+  text-align: center;
+  color: white;
+}
+.judul{
+  font-size: 4vw;
+}
+span{
+  color: #0BB5FF;
+}
+.slogan{
+  font-size: 2vw;
+}
+mark{
+ background-color: #0BB5FF;
+ color: white;
+}
+.book{
+ background-color: #0BB5FF;
+ color: white;
+ border:solid 1px white;
+ font-size: 1vw;
+ width: 100px;
+ height: 30px;
+}
+@media screen and (max-width:600px){
+  .book{
+      width: 60px;
+      height: 15px;
+    }
+}
